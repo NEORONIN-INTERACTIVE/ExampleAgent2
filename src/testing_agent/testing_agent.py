@@ -23,7 +23,7 @@ class TestingAgent(CompetitionAgent):
     def __init__(self, faction: Faction, config):
         super().__init__(faction, config)
         
-        self.log("Constructed test 4")
+        self.log("Constructed test 5")
         
         # Track entities (matches original: uses set not dict)
         self.entities = set()
@@ -47,8 +47,6 @@ class TestingAgent(CompetitionAgent):
         print(f"{self.log_prefix}{message}")
     
     def select_action(self, observation):
-        self.log("Selecting action")
-
         return super().select_action(observation)
 
     def __entity_spawned(self, event):
