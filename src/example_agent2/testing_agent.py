@@ -23,7 +23,7 @@ class TestingAgent(CompetitionAgent):
     def __init__(self, faction: Faction, config):
         super().__init__(faction, config)
         
-        self.log("Constructed example agent")
+        self.log("Constructed example agent 2")
         
         # Track entities (matches original: uses set not dict)
         self.entities = set()
